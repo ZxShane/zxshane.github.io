@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-25T13:25:21.802Z</updated>
+  <updated>2018-03-10T03:39:35.660Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue+webpack搭建前端项目</title>
+    <link href="http://yoursite.com/2018/03/09/vue-webpack%E6%90%AD%E5%BB%BA%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://yoursite.com/2018/03/09/vue-webpack搭建前端项目/</id>
+    <published>2018-03-09T05:34:42.000Z</published>
+    <updated>2018-03-10T03:39:35.660Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭建前端环境：</p><p></p><h1>一、下载并安装node和npm</h1><br>  首先，从<a href="https://nodejs.org/zh-cn" target="_blank" rel="noopener">Node.js官网</a><br>  下载对应平台的安装程序。本教程将下载windows环境下的node，使用linux的童鞋可以点击“下载”，里面有所有版本的node。<br>  <img src="/images/blog_vue+webpack1.png" alt=""><br>  下载完成之后，打开安装包，进行安装，安装过程全部默认属性即可。<br>  <img src="/images/blog_vue+webpack2.png" alt=""><br>  <img src="/images/blog_vue+webpack3.png" alt=""><br>  <img src="/images/blog_vue+webpack4.png" alt=""><br>  <img src="/images/blog_vue+webpack5.png" alt=""><br>  <img src="/images/blog_vue+webpack6.png" alt=""><br>  安装完成之后，打开cmd命令行，输入“node -v”,如果出现node版本号，即安装成功。<br>  <img src="/images/blog_vue+webpack7.png" alt=""><br>  <h4>node安装好之后，我们先认识一下npm。</h4><br>  npm是什么东东？<p></p><h4><br>    npm其实是Node.js的包管理工具（package manager）。<br></h4><p> 为啥我们需要一个包管理工具呢？因为我们在Node.js上开发时，会用到很多别人写的JavaScript代码。如果我们要使用别人写的某个包，每次都根据名称搜索一下官方网站，下载代码，解压，再使用，非常繁琐。于是一个集中管理的工具应运而生：大家都把自己开发的模块打包后放到npm官网上，如果要使用，直接通过npm安装就可以直接用，不用管代码存在哪，应该从哪下载。</p><p>更重要的是，如果我们要使用模块A，而模块A又依赖于模块B，模块B又依赖于模块X和模块Y，npm可以根据依赖关系，把所有依赖的包都下载下来并管理起来。否则，靠我们自己手动管理，肯定既麻烦又容易出错。</p><p>其实npm已经在Node.js安装的时候顺带装好了。我们在命令提示符或者终端输入npm -v，应该看到类似的输出：<br>  <img src="/images/blog_vue+webpack8.png" alt=""></p><p></p><h1>二、安装vue及脚手架</h1><br>在用Vue构建大型应用时推荐使用npm安装。npm能很好的和webpack打包器配合使用。<br>打开cmd命令窗口，输入“npm install vue”，安装完成之后，我们就要安装vue-cli<p></p><p></p><h4>什么是vue-cli呢？</h4><br>vue-cli是Vue 提供一个官方命令行工具，可用于快速搭建大型单页应用。该工具为现代化的前端开发工作流提供了开箱即用的构建配置。只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目：<br>在命令行中输入以下命令：<p></p><h1 id="全局安装-vue-cli"><a href="#全局安装-vue-cli" class="headerlink" title="全局安装 vue-cli"></a>全局安装 vue-cli</h1><p>$ npm install –global vue-cli</p><p></p><h1>三、创建一个基于webpack的vue项目</h1><br>webpack是一个打包工具。<br>打开你预想的项目所在的文件夹。例如：我想把项目放在D盘的“my-project”文件夹里，就在命令行里输入”cd d:”,进入D盘后，输入“cd my-project”，进入“my-project”文件夹。<br>然后输入：<br>$ vue init webpack my-project<br>根据提示填好信息即可。<br>若想运行文件，在命令行里输入：<p></p><p>$ npm install \下载依赖<br>$ npm run dev \运行文件</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;搭建前端环境：&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h1&gt;一、下载并安装node和npm&lt;/h1&gt;&lt;br&gt;  首先，从&lt;a href=&quot;https://nodejs.org/zh-cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Node.js官网&lt;/a&gt;&lt;br&gt; 
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用vue.js写todolis</title>
+    <link href="http://yoursite.com/2018/03/09/%E7%94%A8vue-js%E5%86%99todolis/"/>
+    <id>http://yoursite.com/2018/03/09/用vue-js写todolis/</id>
+    <published>2018-03-09T03:04:32.000Z</published>
+    <updated>2018-03-09T05:25:55.198Z</updated>
+    
+    <content type="html"><![CDATA[<p>Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。</p><p>接下来，我将用vue编写todolist：<br>本篇文章默认读者已经搭建好前端环境，并学会如何用vue构建webpack项目，若不清楚，请参见这篇博文：</p><p>#一、 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/02/26/hello-world/"/>
+    <id>http://yoursite.com/2018/02/26/hello-world/</id>
+    <published>2018-02-26T11:21:57.896Z</published>
+    <updated>2018-02-26T11:21:57.986Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>我的第一篇博客</title>
