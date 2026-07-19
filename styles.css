@@ -59,6 +59,19 @@ p { margin: 0 0 10px; }
 }
 .project-demo figcaption { max-width: 720px; margin-top: 9px; color: var(--muted); font-size: 13px; }
 .project-demo figcaption strong { margin-right: 8px; color: var(--text); }
+.project-figures { display: grid; gap: 24px; margin-top: 22px; }
+.project-figure { margin: 0; }
+.project-figure a { display: block; max-width: 720px; }
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.project-figure figcaption { max-width: 720px; margin-top: 9px; color: var(--muted); font-size: 13px; }
+.project-figure figcaption strong { margin-right: 8px; color: var(--text); }
 
 .section-note { margin: -20px 0 24px; color: var(--muted); font-size: 13px; }
 .publication-list { margin: 0; padding-left: 22px; }

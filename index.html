@@ -77,6 +77,20 @@
           <h3>EmoOmni：全模态情绪推理与模态均衡强化学习</h3>
           <p>提出 Omni-CoT 多模态推理数据构建范式和 DyME-GRPO 强化学习方法，改善 Omni 模型在视觉、音频和文本信息利用上的失衡问题。</p>
           <p class="note">ACL 2026 Findings · ICASSP 2026 HumDial Challenge 全球第三名。</p>
+          <div class="project-figures">
+            <figure class="project-figure">
+              <a href="assets/emoomni-framework.png" target="_blank" rel="noreferrer" aria-label="查看 EmoOmni 完整框架图">
+                <img src="assets/emoomni-framework.png" alt="EmoOmni 两阶段训练框架：OmniCoT 冷启动与 DyME-GRPO 强化学习" width="1160" height="580" loading="lazy">
+              </a>
+              <figcaption><strong>EmoOmni 框架</strong> 先通过 OmniCoT 进行 SFT 冷启动，再利用 DyME-GRPO 的动态模态熵奖励缓解模态坍缩。</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <a href="assets/emoomni-main-results.png" target="_blank" rel="noreferrer" aria-label="查看 EmoOmni 完整实验结果图">
+                <img src="assets/emoomni-main-results.png" alt="EmoOmni 在四个多模态情绪识别与推理基准上的主要实验结果" width="1160" height="790" loading="lazy">
+              </a>
+              <figcaption><strong>主要实验结果</strong> EmoOmni 在 RAVDESS、MELD、IEMOCAP 和 MER2025 的大多数指标上取得最佳结果。</figcaption>
+            </figure>
+          </div>
         </div>
       </article>
 
