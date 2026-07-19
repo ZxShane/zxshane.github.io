@@ -48,7 +48,21 @@
         <div>
           <h3>面向 Days-level 超长视频的主动记忆 Agent</h3>
           <p>面向第一视角超长视频理解任务，研究 Agent 的长期记忆形成、动态检索与压缩问题。提出 Active Explore Memory Agent，在探索长视频的过程中主动写入、检索、压缩并更新记忆。</p>
-          <p class="note">在 EgoLifeQA 和 Ego-R1 Bench 上实现 5.3× 更快的记忆检索，以及最高 6.1× 的记忆压缩。</p>
+          <p class="note">在 4 种响应模型下均取得最佳整体准确率；使用 Qwen3-VL-30B 时，Ego-R1 Bench 平均准确率达到 48.5%，每个问题的记忆检索时间仅为 0.269 秒。</p>
+          <div class="project-figures">
+            <figure class="project-figure">
+              <a href="assets/aemagent-accuracy-results.png" target="_blank" rel="noreferrer" aria-label="查看 AEMAgent 完整准确率结果">
+                <img src="assets/aemagent-accuracy-results.png" alt="AEMAgent 在 EgoLifeQA 和 Ego-R1 Bench 上的任务准确率结果" width="1160" height="1025" loading="lazy">
+              </a>
+              <figcaption><strong>准确率结果</strong> AEMAgent 在 EgoLifeQA 和 Ego-R1 Bench 上均取得最高加权平均准确率，相比最强基线分别提升 1.9-3.3 和 1.9-9.9 个百分点。</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <a href="assets/aemagent-efficiency-results.png" target="_blank" rel="noreferrer" aria-label="查看 AEMAgent 完整检索效率结果">
+                <img src="assets/aemagent-efficiency-results.png" alt="AEMAgent 的记忆开销、检索速度和平均准确率结果" width="600" height="510" loading="lazy">
+              </a>
+              <figcaption><strong>检索速度与准确率</strong> AEMAgent 以 0.269 秒完成单问题检索并达到 48.5% 准确率；相比 WorldMM，检索约快 25 倍、准确率提高 8.5 个百分点，同时减少 32.2% 的记忆 Token。</figcaption>
+            </figure>
+          </div>
           <figure class="project-demo">
             <video controls playsinline preload="metadata" poster="assets/memorylens-demo-poster.jpg">
               <source src="assets/memorylens-demo.mp4" type="video/mp4">
