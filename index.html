@@ -75,8 +75,15 @@
         <div class="item-time">2025</div>
         <div>
           <h3>EmoOmni：全模态情绪推理与模态均衡强化学习</h3>
-          <p>提出 Omni-CoT 多模态推理数据构建范式和 DyME-GRPO 强化学习方法，改善 Omni 模型在视觉、音频和文本信息利用上的失衡问题。</p>
+          <p>针对 Omni 模型在视觉、音频与文本联合推理中容易过度依赖单一模态的问题，提出 OmniCoT 数据构建范式和 DyME-GRPO 强化学习方法，使模型能够显式提取多模态证据，并根据不确定性动态调整模态使用。</p>
+          <ul class="method-list">
+            <li><strong>OmniCoT：</strong>使用 <code>[vision]</code>、<code>[audio]</code>、<code>[dialogue]</code> 和 <code>[analysis]</code> Guided Tokens 组织推理链；先分别提取各模态的情绪证据，再通过 LLM 验证模块筛除证据不足或逻辑不一致的推理样本。</li>
+            <li><strong>DyME-GRPO：</strong>在 OmniCoT SFT 冷启动基础上，引入动态模态熵奖励，根据模态 Token 的预测熵与实际使用比例衡量不确定性，并结合准确率奖励和格式奖励优化推理策略，减少信息冗余与模态坍缩。</li>
+          </ul>
           <p class="note">ACL 2026 Findings · ICASSP 2026 HumDial Challenge 全球第三名。</p>
+          <div class="project-links">
+            <a href="https://github.com/ZxShane/EmoOmni" target="_blank" rel="noreferrer">GitHub · EmoOmni 项目代码</a>
+          </div>
           <div class="project-figures">
             <figure class="project-figure">
               <a href="assets/emoomni-framework.png" target="_blank" rel="noreferrer" aria-label="查看 EmoOmni 完整框架图">

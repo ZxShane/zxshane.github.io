@@ -47,6 +47,12 @@ p { margin: 0 0 10px; }
 .item-time { padding-top: 2px; color: var(--muted); font-size: 13px; white-space: nowrap; }
 .research-item p, .timeline-row p { color: #44515b; font-size: 14px; }
 .research-item .note { color: var(--link); font-size: 13px; }
+.method-list { margin: 12px 0 14px; padding-left: 20px; color: #44515b; font-size: 14px; }
+.method-list li { margin-bottom: 8px; }
+.method-list code { padding: 1px 4px; background: #f1f4f6; border-radius: 3px; color: #34424d; font-size: 12px; }
+.project-links { margin: 13px 0 0; }
+.project-links a { display: inline-block; padding-bottom: 1px; border-bottom: 1px solid currentColor; font-size: 13px; }
+.project-links a:hover { text-decoration: none; }
 .project-demo { margin: 22px 0 4px; }
 .project-demo video {
   display: block;
