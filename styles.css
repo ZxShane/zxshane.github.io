@@ -60,15 +60,18 @@ p { margin: 0 0 10px; }
   line-height: 1.2;
 }
 .venue-badge small { padding-left: 7px; border-left: 1px solid currentColor; font-size: 12px; font-weight: 600; }
+.venue-badge em { font-family: Georgia, "Times New Roman", serif; font-style: italic; }
+.venue-badge u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .venue-badge.review { border-color: #e2c991; color: #78551a; background: #fff8e9; }
 .venue-badge.published { border-color: #b9d6c1; color: #225c35; background: #eef7f1; }
+.demo-status { margin-top: 22px; margin-bottom: 9px; }
 .method-list { margin: 12px 0 14px; padding-left: 20px; color: #44515b; font-size: 14px; }
 .method-list li { margin-bottom: 8px; }
 .method-list code { padding: 1px 4px; background: #f1f4f6; border-radius: 3px; color: #34424d; font-size: 12px; }
 .project-links { margin: 13px 0 0; }
 .project-links a { display: inline-block; padding-bottom: 1px; border-bottom: 1px solid currentColor; font-size: 13px; }
 .project-links a:hover { text-decoration: none; }
-.project-demo { margin: 22px 0 4px; }
+.project-demo { margin: 0 0 4px; }
 .project-demo video {
   display: block;
   width: 100%;
