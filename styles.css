@@ -47,6 +47,18 @@ p { margin: 0 0 10px; }
 .item-time { padding-top: 2px; color: var(--muted); font-size: 13px; white-space: nowrap; }
 .research-item p, .timeline-row p { color: #44515b; font-size: 14px; }
 .research-item .note { color: var(--link); font-size: 13px; }
+.project-demo { margin: 22px 0 4px; }
+.project-demo video {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  background: #111820;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  aspect-ratio: 30 / 19;
+}
+.project-demo figcaption { max-width: 720px; margin-top: 9px; color: var(--muted); font-size: 13px; }
+.project-demo figcaption strong { margin-right: 8px; color: var(--text); }
 
 .section-note { margin: -20px 0 24px; color: var(--muted); font-size: 13px; }
 .publication-list { margin: 0; padding-left: 22px; }
