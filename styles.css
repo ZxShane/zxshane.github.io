@@ -47,6 +47,21 @@ p { margin: 0 0 10px; }
 .item-time { padding-top: 2px; color: var(--muted); font-size: 13px; white-space: nowrap; }
 .research-item p, .timeline-row p { color: #44515b; font-size: 14px; }
 .research-item .note { color: var(--link); font-size: 13px; }
+.venue-badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 14px; }
+.venue-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+.venue-badge small { padding-left: 7px; border-left: 1px solid currentColor; font-size: 12px; font-weight: 600; }
+.venue-badge.review { border-color: #e2c991; color: #78551a; background: #fff8e9; }
+.venue-badge.published { border-color: #b9d6c1; color: #225c35; background: #eef7f1; }
 .method-list { margin: 12px 0 14px; padding-left: 20px; color: #44515b; font-size: 14px; }
 .method-list li { margin-bottom: 8px; }
 .method-list code { padding: 1px 4px; background: #f1f4f6; border-radius: 3px; color: #34424d; font-size: 12px; }
