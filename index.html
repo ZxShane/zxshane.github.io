@@ -127,9 +127,26 @@
       <article class="research-item">
         <div class="item-time">2020 - 2022</div>
         <div>
-          <h3>对抗攻击分析与隐私保护滤镜</h3>
-          <p>设计具备迁移能力的人像隐私保护对抗滤镜，并基于 InsightFace、React Native 和 Flask 构建移动端实时推理系统。</p>
-          <p class="note">相关成果发表于 ACM Multimedia 和 IEEE Transactions on Multimedia。</p>
+          <h3>APF：对抗式人像隐私保护滤镜与移动端 Demo</h3>
+          <p>针对社交平台人像可能被恶意爬取并用于人脸识别的问题，提出端云协同的 Adversarial Privacy-preserving Filter（APF）。用户端只向服务器传输图像特定梯度，而不上传原始人像；服务器通过对抗梯度迁移与通用扰动增强生成最终滤镜，在尽量保持视觉质量的同时误导恶意人脸识别模型。</p>
+          <p>进一步基于 React Native 与 Flask 构建移动端 Demo，支持身份图像注册、待保护图像选择、隐私滤镜生成，以及结果保存和分享。</p>
+          <div class="venue-badges" aria-label="论文成果">
+            <span class="venue-badge published"><strong><em><u>ACM MM 2021 Demo</u></em></strong></span>
+          </div>
+          <div class="project-figures">
+            <figure class="project-figure">
+              <a href="assets/apf-framework.png" target="_blank" rel="noreferrer" aria-label="查看 APF 完整方法示意图">
+                <img src="assets/apf-framework.png" alt="APF 端云协同对抗隐私保护滤镜设计框架" width="660" height="410" loading="lazy">
+              </a>
+              <figcaption><strong>APF 方法示意</strong> 用户端提取图像特定梯度，服务器完成梯度迁移与通用扰动增强，再将对抗扰动返回用户端生成隐私保护图像。</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <a href="assets/apf-demo-ui.png" target="_blank" rel="noreferrer" aria-label="查看 APF 完整移动端 Demo 界面">
+                <img src="assets/apf-demo-ui.png" alt="APF 移动端 Demo 的首页、注册、选图和结果界面" width="650" height="470" loading="lazy">
+              </a>
+              <figcaption><strong>移动端 Demo</strong> 从身份注册、选择待保护图像，到生成、保存和分享隐私保护结果的完整交互流程。</figcaption>
+            </figure>
+          </div>
         </div>
       </article>
     </section>
