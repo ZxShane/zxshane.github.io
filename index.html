@@ -124,7 +124,7 @@
         </div>
       </article>
 
-      <article class="research-item">
+      <article id="edge-omni" class="research-item">
         <div class="item-time">2024.05 - 2024.12</div>
         <div>
           <h3>端侧 Omni 全模态模型构建与训练</h3>
@@ -134,6 +134,20 @@
             <li><strong>数据与训练：</strong>整合 LibriSpeech、ShareGPT4V 等公开预训练数据，通过模态数据规模、配比及训练策略的对比与消融实验，分析不同模态数据对模型收敛、理解能力和泛化性能的影响。</li>
           </ul>
           <p class="note">完成端侧 Omni 模型的初步训练与多模态能力验证，并评估不同数据配比下模型性能、推理速度和资源占用之间的权衡，为后续数据优化与端侧部署提供实验依据。</p>
+          <div class="project-figures">
+            <figure class="project-figure">
+              <a href="assets/edge-omni-capability-results.svg" target="_blank" rel="noreferrer" aria-label="查看端侧 Omni 模型完整能力评测结果">
+                <img src="assets/edge-omni-capability-results.svg" alt="端侧 Omni 模型的语音识别与短 Caption 评测结果" width="1160" height="640" loading="lazy">
+              </a>
+              <figcaption><strong>多模态能力验证</strong> Ours-Audio 在 LibriSpeech 与 TIMIT 上分别取得 3 和 8 的 WER；Stage2-Text 在 BLEU-4、METEOR、ROUGE-L 和 CIDEr 上均超过 MiniGPT-4。</figcaption>
+            </figure>
+            <figure class="project-figure">
+              <a href="assets/edge-omni-data-mix-ablation.svg" target="_blank" rel="noreferrer" aria-label="查看端侧 Omni 模型完整数据配比实验结果">
+                <img src="assets/edge-omni-data-mix-ablation.svg" alt="端侧 Omni 模型 Text、Image、Audio 数据配比消融结果" width="1160" height="640" loading="lazy">
+              </a>
+              <figcaption><strong>数据配比消融</strong> 在 13 组 Text:Image:Audio 配比实验中，2:1:1 取得最高 CIDEr（0.211），说明适量文本与均衡的图像、音频数据更有利于 Caption 能力。</figcaption>
+            </figure>
+          </div>
         </div>
       </article>
 

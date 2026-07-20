@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="640" viewBox="0 0 1160 640" role="img" aria-labelledby="title desc">
+  <title id="title">端侧 Omni 模型的语音识别与短 Caption 评测结果</title>
+  <desc id="desc">Ours-Audio 在 LibriSpeech 和 TIMIT 上的 WER 分别为 3 和 8；Stage2-Text 在 BLEU-4、METEOR、ROUGE-L 和 CIDEr 上均超过 MiniGPT-4。</desc>
+  <rect width="1160" height="640" fill="#ffffff"/>
+  <style>
+    text { font-family: Inter, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #17212b; }
+    .title { font-size: 34px; font-weight: 700; }
+    .subtitle { font-size: 17px; fill: #66737f; }
+    .section { font-size: 22px; font-weight: 700; }
+    .label { font-size: 16px; font-weight: 600; }
+    .small { font-size: 14px; fill: #66737f; }
+    .value { font-size: 15px; font-weight: 700; }
+    .grid { stroke: #e8edf1; stroke-width: 1; }
+  </style>
+
+  <text class="title" x="58" y="58">端侧 Omni：语音与视觉能力验证</text>
+  <text class="subtitle" x="58" y="90">约 3.9B 参数 · Qwen2.5-3B + InternViT-0.3B + Qwen-Audio Encoder-0.6B</text>
+  <line x1="58" y1="112" x2="1102" y2="112" stroke="#dfe5ea" stroke-width="2"/>
+
+  <text class="section" x="58" y="154">语音识别 · WER ↓</text>
+  <circle cx="310" cy="148" r="6" fill="#2369a8"/><text class="small" x="323" y="153">Ours-Audio</text>
+  <circle cx="420" cy="148" r="6" fill="#b8c2ca"/><text class="small" x="433" y="153">Qwen2-Audio</text>
+  <text class="small" x="205" y="190">0</text><text class="small" x="331" y="190">5</text><text class="small" x="458" y="190">10</text>
+  <line class="grid" x1="210" y1="198" x2="470" y2="198"/><line class="grid" x1="210" y1="188" x2="210" y2="455"/><line class="grid" x1="340" y1="188" x2="340" y2="455"/><line class="grid" x1="470" y1="188" x2="470" y2="455"/>
+
+  <text class="label" x="58" y="242">LibriSpeech</text>
+  <rect x="210" y="216" width="78" height="22" rx="3" fill="#2369a8"/><text class="value" x="296" y="233">3</text>
+  <rect x="210" y="248" width="104" height="22" rx="3" fill="#b8c2ca"/><text class="value" x="322" y="265">4</text>
+  <text class="label" x="58" y="362">TIMIT</text>
+  <rect x="210" y="336" width="208" height="22" rx="3" fill="#2369a8"/><text class="value" x="426" y="353">8</text>
+  <rect x="210" y="368" width="234" height="22" rx="3" fill="#b8c2ca"/><text class="value" x="452" y="385">9</text>
+  <text class="small" x="58" y="430">更低的 WER 表示更好的语音识别性能。</text>
+
+  <line x1="528" y1="140" x2="528" y2="486" stroke="#e1e6ea" stroke-width="2"/>
+  <text class="section" x="570" y="154">短 Caption · Stage2-Text vs MiniGPT-4</text>
+  <rect x="570" y="178" width="15" height="6" rx="3" fill="#2369a8"/><text class="small" x="592" y="185">Stage2-Text</text>
+  <rect x="705" y="178" width="15" height="6" rx="3" fill="#b8c2ca"/><text class="small" x="727" y="185">MiniGPT-4</text>
+
+  <text class="label" x="570" y="226">BLEU-4</text>
+  <rect x="690" y="208" width="233" height="16" rx="3" fill="#2369a8"/><text class="value" x="934" y="221">9.3</text>
+  <rect x="690" y="231" width="168" height="16" rx="3" fill="#b8c2ca"/><text class="value" x="869" y="244">6.7</text>
+  <text class="small" x="1015" y="233">+38.8%</text>
+
+  <text class="label" x="570" y="306">METEOR</text>
+  <rect x="690" y="288" width="323" height="16" rx="3" fill="#2369a8"/><text class="value" x="1024" y="301">19.4</text>
+  <rect x="690" y="311" width="315" height="16" rx="3" fill="#b8c2ca"/><text class="value" x="1016" y="324">18.9</text>
+  <text class="small" x="1063" y="313">+2.6%</text>
+
+  <text class="label" x="570" y="386">ROUGE-L</text>
+  <rect x="690" y="368" width="353" height="16" rx="3" fill="#2369a8"/><text class="value" x="1054" y="381">35.3</text>
+  <rect x="690" y="391" width="318" height="16" rx="3" fill="#b8c2ca"/><text class="value" x="1019" y="404">31.8</text>
+  <text class="small" x="1063" y="393">+11.0%</text>
+
+  <text class="label" x="570" y="466">CIDEr</text>
+  <rect x="690" y="448" width="338" height="16" rx="3" fill="#2369a8"/><text class="value" x="1039" y="461">20.3</text>
+  <rect x="690" y="471" width="320" height="16" rx="3" fill="#b8c2ca"/><text class="value" x="1021" y="484">19.2</text>
+  <text class="small" x="1063" y="473">+5.7%</text>
+
+  <rect x="58" y="528" width="1044" height="70" rx="8" fill="#f4f7fa"/>
+  <text class="label" x="82" y="557">关键结果</text>
+  <text class="subtitle" x="82" y="584">音频对齐模型取得更低 WER；加入文本训练后，短 Caption 的四项指标均超过 MiniGPT-4。</text>
+</svg>
