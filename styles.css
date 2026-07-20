@@ -27,9 +27,9 @@ a:hover { text-decoration: underline; }
 nav { display: flex; gap: 25px; }
 nav a { color: #46535e; font-size: 14px; }
 
-.intro { padding: 72px 0 64px; display: grid; grid-template-columns: 165px 1fr; gap: 42px; align-items: start; }
-.portrait-frame { position: relative; width: 165px; height: 205px; overflow: hidden; border-radius: 4px; background: #dceaf5; }
-.portrait { position: absolute; top: 55%; left: 50%; width: 190%; max-width: none; transform: translate(-50%, -50%); }
+.intro { padding: 72px 0 64px; display: grid; grid-template-columns: 220px 1fr; gap: 42px; align-items: start; }
+.portrait-frame { width: 220px; border-radius: 4px; background: #dceaf5; }
+.portrait { display: block; width: 100%; height: auto; max-width: 100%; border-radius: 4px; }
 h1 { margin: 0 0 2px; font-family: Georgia, "Times New Roman", serif; font-size: 38px; line-height: 1.25; font-weight: 500; }
 h1 span { margin-left: 8px; color: var(--muted); font-size: 24px; font-weight: 400; }
 .role { margin: 8px 0 0; font-size: 18px; }
@@ -118,8 +118,8 @@ footer { padding: 30px 0 42px; border-top: 1px solid var(--line); display: flex;
   .nav-wrap { padding: 16px 0; align-items: flex-start; }
   nav { gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
   nav a { font-size: 12px; }
-  .intro { grid-template-columns: 105px 1fr; gap: 22px; padding: 48px 0; }
-  .portrait-frame { width: 105px; height: 132px; }
+  .intro { grid-template-columns: 130px 1fr; gap: 22px; padding: 48px 0; }
+  .portrait-frame { width: 130px; }
   h1 { font-size: 30px; }
   h1 span { display: block; margin-left: 0; font-size: 19px; }
   .role { font-size: 16px; }
